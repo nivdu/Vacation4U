@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="259.0" prefWidth="481.0" styleClass="text-field" stylesheets="@../css/addVacation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TradeVacationController">
+   <children>
+      <Text layoutX="156.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trade Vacation" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="yoursId_Vacation" alignment="CENTER" layoutX="52.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter yours vacation id" />
+      <TextField fx:id="wantedId_Vacation" layoutX="262.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter wanted vacation id" />
+      <Button onMouseClicked="#onBack" layoutX="156.0" layoutY="217.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="close"  onMouseClicked="#onTrade"  layoutX="262.0" layoutY="217.0" mnemonicParsing="false" text="Send request" />
+   </children>
+</AnchorPane>
